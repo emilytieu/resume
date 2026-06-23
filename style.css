@@ -102,6 +102,15 @@
       margin-bottom: 2.5rem;
     }
 
+    .section-desc {
+      font-size: 14px;
+      color: var(--color-text-secondary);
+      line-height: 1.8;
+      font-weight: 300;
+      margin-top: -1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
     /* HERO */
     #about { padding-top: 6rem; }
     .hero-name {
