@@ -41,7 +41,7 @@
       line-height: 1.7;
     }
 
-  /* NAV */
+/* NAV */
     nav {
       position: sticky;
       top: 0;
@@ -83,7 +83,7 @@
       .nav-links a { font-size: 12px; }
     }
 
-  /* SECTIONS */
+/* SECTIONS */
     section {
       max-width: 720px;
       margin: 0 auto;
@@ -112,7 +112,7 @@
       margin-bottom: 1.5rem;
     }
 
-  /* HERO */
+/* HERO */
     #about { padding-top: 6rem; }
     .hero-name {
       font-family: var(--ff-serif);
@@ -180,7 +180,7 @@
     }
     .btn-primary:hover { opacity: 0.88; background: var(--color-text-primary); }
 
-    /* EXPERIENCE */
+  /* EXPERIENCE */
     .exp-list { display: flex; flex-direction: column; gap: 2.5rem; }
     .exp-item { display: grid; grid-template-columns: 120px 1fr; gap: 0 1.5rem; }
     .exp-date {
