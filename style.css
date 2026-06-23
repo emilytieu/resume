@@ -41,7 +41,7 @@
       line-height: 1.7;
     }
 
-    /* NAV */
+  /* NAV */
     nav {
       position: sticky;
       top: 0;
@@ -83,7 +83,7 @@
       .nav-links a { font-size: 12px; }
     }
 
-    /* SECTIONS */
+  /* SECTIONS */
     section {
       max-width: 720px;
       margin: 0 auto;
@@ -100,6 +100,7 @@
       text-transform: uppercase;
       color: var(--color-text-tertiary);
       margin-bottom: 2.5rem;
+      margin-top: -1.5rem;
     }
 
     .section-desc {
@@ -111,7 +112,7 @@
       margin-bottom: 1.5rem;
     }
 
-    /* HERO */
+  /* HERO */
     #about { padding-top: 6rem; }
     .hero-name {
       font-family: var(--ff-serif);
@@ -127,9 +128,9 @@
       font-size: clamp(2.0rem, 5vw, 3.0rem);
     }
     .hero-tagline {
-      font-size: 16px;
+      font-size: 15px;
       color: var(--color-text-secondary);
-      max-width: 480px;
+      max-width: 700px;
       font-weight: 300;
       line-height: 1.8;
       margin-bottom: 2rem;
@@ -197,7 +198,7 @@
       .exp-date { padding-top: 0; margin-bottom: 4px; }
     }
 
-    /* PROJECTS */
+  /* PROJECTS */
     .proj-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -264,7 +265,7 @@
     .tab-panel { display: none; }
     .tab-panel.active { display: block; }
 
-    /* COURSEWORK */
+  /* COURSEWORK */
     .course-item {
       display: flex;
       align-items: baseline;
@@ -283,7 +284,33 @@
     .paper-venue { font-family: var(--ff-mono); font-size: 11px; color: var(--color-text-tertiary); }
     .paper-abstract { font-size: 13px; color: var(--color-text-secondary); margin-top: 6px; font-weight: 300; }
 
-    /* CONTACT */
+  /* INTERESTS */
+    .interests-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1px;
+      border: 0.5px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+    }
+    @media (max-width: 500px) {
+      .interests-grid { grid-template-columns: 1fr; }
+      .interest-card:nth-child(odd) { border-right: none; }
+      .interest-card:nth-child(n+2) { border-top: 0.5px solid var(--color-border); }
+    }
+    .interest-card {
+      padding: 1.5rem;
+      background: var(--color-bg);
+      transition: background .15s var(--ease);
+    }
+    .interest-card:hover { background: var(--color-bg-secondary); }
+    .interest-card:nth-child(odd) { border-right: 0.5px solid var(--color-border); }
+    .interest-card:nth-child(n+3) { border-top: 0.5px solid var(--color-border); }
+    .interest-icon { font-size: 1.4rem; margin-bottom: 0.6rem; line-height: 1; }
+    .interest-title { font-size: 14px; font-weight: 500; margin-bottom: 4px; }
+    .interest-desc { font-size: 13px; color: var(--color-text-secondary); font-weight: 300; line-height: 1.6; }
+
+  /* CONTACT */
     .contact-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -310,7 +337,7 @@
     }
     .contact-val { font-size: 14px; color: var(--color-text-primary); }
 
-    /* FOOTER */
+  /* FOOTER */
     footer {
       text-align: center;
       padding: 2.5rem;
